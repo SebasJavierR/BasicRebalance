@@ -1,0 +1,17 @@
+name = "Marrocan-Granada"
+
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 1751 # CEUTA
+}
+
+1444.1.1 = {
+	add_attacker = GRA
+	add_defender = MOR
+}
+
+1444.10.10 = {
+	rem_attacker = GRA
+	rem_defender = MOR
+}

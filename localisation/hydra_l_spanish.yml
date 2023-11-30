@@ -1,0 +1,8 @@
+﻿l_spanish:
+########################################
+#Triggers#
+########################################
+ base_age_0_balance_modifier:0 "Modificador Base de la Era de los Descubrimientos"
+ base_age_1_balance_modifier:0 "Modificador Base de la Era de los Reforma"
+ base_age_2_balance_modifier:0 "Modificador Base de la Era de los Absolutismo"
+ base_age_3_balance_modifier:0 "Modificador Base de la Era de los Revoluciones"

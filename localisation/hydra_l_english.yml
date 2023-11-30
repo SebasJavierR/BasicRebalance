@@ -1,0 +1,11 @@
+﻿l_english:
+########################################
+#Triggers#
+########################################
+ base_age_0_balance_modifier:0 "Base age of Discovery balance modifier"
+ base_age_1_balance_modifier:0 "Base age of Reformation balance modifier"
+ base_age_2_balance_modifier:0 "Base age of Absolutism balance modifier"
+ base_age_3_balance_modifier:0 "Base age of Revolutions balance modifier"
+
+ SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:\nMonthly Manpower: §G+100%§!"
+ CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+100%§!\nYearly Army Professionalism: §R-5.0%§!"

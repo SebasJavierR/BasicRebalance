@@ -1,0 +1,3 @@
+﻿l_english:
+ SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:\nMonthly Manpower: §G+100%§!"
+ CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+100%§!\nYearly Army Professionalism: §R-5.0%§!"

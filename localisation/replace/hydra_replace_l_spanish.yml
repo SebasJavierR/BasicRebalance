@@ -1,0 +1,3 @@
+﻿l_spanish:
+ SLACK_TEXT:1 "§YRelajar los estándares de reclutamiento§! Cuesta $DROP|R$ Profesionalismo del ejército y dara:\nSoldadesca Mensual: §G+100%§!"
+ CANT_SLACKEN_TOO_LOW:0 "Tenemos un profesionalismo militar demasiado bajo como para relajar los estándares de reclutamiento. Necesitamos al menos $NEED|Y$ de Profecionalidad del ejercito. Nos daria:\nSoldadesca mensual: §G+100%§!\nProfesionalismo anual del ejército: §R-5.0%§!"
