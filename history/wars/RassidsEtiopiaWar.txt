@@ -1,0 +1,15 @@
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 390 # SANA
+}
+
+1444.1.1 = {
+	add_attacker = ETH
+	add_defender = RAS
+}
+
+1444.10.10 = {
+	rem_attacker = ETH
+	rem_defender = RAS
+}

@@ -1,0 +1,74 @@
+hydra_tur_force_decadence_malus_modifier = {	#Parte del arreglo del desastre otomano.
+	all_power_cost = 0.025
+}
+hydra_tur_force_decadence_modifier = {			#Parte del arreglo del desastre otomano.
+	monthly_ottoman_decadence = 1
+}
+
+allie_less_than_5_years_ago_modifier = {		#Parte del contador para detectar si estubiste aliado con otro jugador.
+	stability_cost_modifier = +0.01
+}
+
+hydra_defensiveness_reduction_modifier = {		#Parte del evento, hydra defensiveness, nerfeo a la defensividad de suiza en provincias ocupadas.
+	local_defensiveness = -0.33
+}
+
+#hydra_defensiveness_reduction_2_modifier = {	#Parte del evento, hydra defensiveness, nerfeo a la defensividad de suiza en provincias ocupadas.
+#	local_defensiveness = -0.25
+#}
+
+mor_black_guard = {
+	discipline = 0.05
+}
+
+hydra_naval_reduction_HOL_modifier = {			#Parte de la desicion hydra naval reduction, Actualmente apagada.
+	land_forcelimit_modifier = 0.25
+	global_manpower_modifier = 0.25
+	naval_forcelimit_modifier = -0.50
+	global_sailors_modifier = -0.50
+}
+
+hydra_naval_reduction_GBR_modifier = {			#Parte de la desicion hydra naval reduction, Actualmente apagada.
+	heavy_ship_power = -0.1
+	naval_morale = -0.1
+	land_morale = 0.05
+	infantry_power = 0.05
+}
+
+hydra_naval_reduction_POR_modifier = {			#Parte de la desicion hydra naval reduction, Actualmente apagada.
+	naval_morale = -0.1
+	land_morale = 0.1
+	trade_efficiency = -0.15
+	global_trade_power = -0.1
+	discipline = 0.05
+}
+
+hydra_naval_reduction_MOR_modifier = {			#Parte de la desicion hydra naval reduction, Actualmente apagada.
+	naval_attrition = +0.25
+	naval_forcelimit_modifier = -0.25
+	land_forcelimit_modifier = 0.15
+	max_hostile_attrition = 2
+}
+
+hydra_naval_modernization_MOR_modifier = {		#Parte de la desicion hydra naval reduction, Actualmente apagada.
+	galley_power = -0.20
+	privateer_efficiency = -0.15
+	heavy_ship_power = 0.1
+	naval_morale = 0.05
+}
+
+impossible_to_block_strait_modifier = {
+	#local_defensiveness = 0.25					#Removido porque:
+	#fort_level = 1								#No quiero que funcione como un mejor fuerte, solo que no se pueda rushear con un asalto. Que sea igual si es asediado normalmente.
+
+	#local_garrison_size = 0.25					#Removido porque: bertus es feo y no le gusto
+	#local_garrison_damage = 0.5
+	#local_fort_maintenance_modifier = -0.25
+	#local_assault_fort_ability = -0.5
+
+}
+
+hydra_fra_empire_modifier = {		#Parte de la desicion Hydra flavor france, Actualmente apagada.
+	morale_damage = 0.05
+	morale_damage_received = -0.05
+}

@@ -1,0 +1,61 @@
+country_decisions = {
+	make_carthage_capital = {
+		color = { 130  5  137 }
+		potential = {
+			tag = MOR
+			#owns = 341
+			NOT = { capital = 341 }
+			NOT = { has_country_flag = relocated_capital_carthage }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+		}
+		allow = {
+			is_at_war = no
+			primary_culture = moroccan
+			religion_group = muslim
+			controls = 341
+			owns = 341
+			341 = {
+				is_state = yes
+			}
+		}
+		effect = {
+			set_country_flag = relocated_capital_carthage
+			add_stability = 1
+			add_core = 341
+			341 = {
+				move_capital_effect = yes
+				change_culture = moroccan
+				change_religion = ROOT
+				rename_capital = Carthage
+				add_center_of_trade_level = 2
+				add_province_modifier = {
+					name = important_natural_harbor
+					duration = -1
+				}
+				change_trade_goods = silk
+			}
+			if = {
+				limit = {
+					NOT = { has_global_flag = carthage_restored }
+				}
+				341 = {
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 3
+				}
+				set_global_flag = carthage_restored
+			}
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		do_not_core = 341 # Constantinople
+	}
+}

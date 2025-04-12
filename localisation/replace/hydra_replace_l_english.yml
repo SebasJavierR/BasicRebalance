@@ -1,3 +1,5 @@
 ﻿l_english:
  SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:\nMonthly Manpower: §G+100%§!"
- CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+100%§!\nYearly Army Professionalism: §R-5.0%§!"
+ CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+200%§!\nYearly Army Professionalism: §R-5.0%§!"
+
+  alpine_defensiveness_desc:0 "Throughout the late 13th and 14th centuries, we have been constantly repelling Habsburg (and, often, by extension, Imperial) incursions into our lands. Our mighty soldiers have played a major role in that, but the hardy, difficult terrain of our mountainous home has made invasion equally difficult.\n§R-33% Defensiveness Outside Switherland§!\n"

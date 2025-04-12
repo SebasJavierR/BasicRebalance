@@ -1,0 +1,21 @@
+country_decisions = {
+	
+	hydra_mod_info = {
+		color = { 130  5  137 }
+		potential = {
+			NOT = { has_country_flag = hydra_hide_ModInfo_flag }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			AI = NO
+		}
+		effect = {
+			country_event = { 
+				id = hydra_notifications.3
+				days = -1
+			}
+		}
+	}
+}

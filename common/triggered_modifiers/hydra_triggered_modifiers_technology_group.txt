@@ -1,0 +1,619 @@
+# ############# Chinese ####################
+# # Age 0
+# technology_group_chinese_0_modifier = {
+# 	potential = {
+# 		technology_group = chinese
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		technology_group = chinese
+# 		current_age = age_of_discovery
+# 	}
+# 	development_cost_modifier = 0.025
+# 	all_estate_influence_modifier = 0.025
+# 	all_estate_loyalty_equilibrium = 0.05
+# }
+# # Age 1 - reformation
+# technology_group_chinese_1_modifier = {
+# 	potential = {
+# 		technology_group = chinese
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		technology_group = chinese
+# 		current_age = age_of_reformation
+# 	}
+# 	development_cost_modifier = 0.05
+# 	all_estate_influence_modifier = 0.05
+# 	all_estate_loyalty_equilibrium = 0.1
+# }
+# # Age 2 - absolutism
+# technology_group_chinese_2_modifier = {
+# 	potential = {
+# 		technology_group = chinese
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		technology_group = chinese
+# 		current_age = age_of_absolutism
+# 	}
+# 	development_cost_modifier = 0.075
+# 	all_estate_influence_modifier = 0.075
+# 	all_estate_loyalty_equilibrium = 0.15
+# 	all_estate_possible_privileges = 1
+# }
+# # Age 3 - revolutions
+# technology_group_chinese_3_modifier = {
+# 	potential = {
+# 		technology_group = chinese
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		technology_group = chinese
+# 		current_age = age_of_revolutions
+# 	}
+# 	development_cost_modifier = 0.1
+# 	all_estate_influence_modifier = 0.1
+# 	all_estate_loyalty_equilibrium = 0.2
+# 	all_estate_possible_privileges = 1
+# }
+
+# ############# Western ####################
+# # Age 0 - discovery
+# technology_group_western_0_modifier = {
+# 	potential = {
+# 		technology_group = western
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		technology_group = western
+# 		current_age = age_of_discovery
+# 	}
+# 	development_cost_in_primary_culture = -0.05
+# 	all_estate_influence_modifier = -0.05
+# 	all_estate_loyalty_equilibrium = -0.025
+# }
+# # Age 1 - reformation
+# technology_group_western_1_modifier = {
+# 	potential = {
+# 		technology_group = western
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		technology_group = western
+# 		current_age = age_of_reformation
+# 	}
+# 	development_cost_in_primary_culture = -0.1
+# 	all_estate_influence_modifier = -0.10
+# 	all_estate_loyalty_equilibrium = -0.05
+# }
+# # Age 2 - absolutism
+# technology_group_western_2_modifier = {
+# 	potential = {
+# 		technology_group = western
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		technology_group = western
+# 		current_age = age_of_absolutism
+# 	}
+# 	development_cost_in_primary_culture = -0.15
+# 	all_estate_influence_modifier = -0.15
+# 	all_estate_loyalty_equilibrium = -0.075
+# }
+# # Age 3 - revolutions
+# technology_group_western_3_modifier = {
+# 	potential = {
+# 		technology_group = western
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		technology_group = western
+# 		current_age = age_of_revolutions
+# 	}
+# 	development_cost_in_primary_culture = -0.2
+# 	all_estate_influence_modifier = -0.2
+# 	all_estate_loyalty_equilibrium = -0.1
+# }
+# ############# Eastern ####################
+# # Age 0 - discovery
+# technology_group_eastern_0_modifier = {
+# 	potential = {
+# 		technology_group = eastern
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		technology_group = eastern
+# 		current_age = age_of_discovery
+# 	}
+# 	global_tax_modifier = -0.05
+# 	institution_spread_from_true_faith = 0.1
+# 	same_religion_advisor_cost = -0.05
+# }
+# # Age 1 - reformation
+# technology_group_eastern_1_modifier = {
+# 	potential = {
+# 		technology_group = eastern
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		technology_group = eastern
+# 		current_age = age_of_reformation
+# 	}
+# 	global_tax_modifier = -0.1
+# 	institution_spread_from_true_faith = 0.2
+# 	same_religion_advisor_cost = -0.1
+# }
+# # Age 2 - absolutism
+# technology_group_eastern_2_modifier = {
+# 	potential = {
+# 		technology_group = eastern
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		technology_group = eastern
+# 		current_age = age_of_absolutism
+# 	}
+# 	global_tax_modifier = -0.15
+# 	institution_spread_from_true_faith = 0.3
+# 	same_religion_advisor_cost = -0.15
+# }
+# # Age 3 - revolutions
+# technology_group_eastern_3_modifier = {
+# 	potential = {
+# 		technology_group = eastern
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		technology_group = eastern
+# 		current_age = age_of_revolutions
+# 	}
+# 	global_tax_modifier = -0.2
+# 	institution_spread_from_true_faith = 0.4
+# 	same_religion_advisor_cost = -0.2
+# }
+
+
+# ############# indian ####################
+# # Age 0 - discovery
+# technology_group_indian_0_modifier = {
+# 	potential = {
+# 		technology_group = indian
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		technology_group = indian
+# 		current_age = age_of_discovery
+# 	}
+# 	embargo_efficiency = 0.1
+# 	trade_value_modifier = 0.05
+# 	global_trade_power = -0.05
+# }
+# # Age 1 - reformation
+# technology_group_indian_1_modifier = {
+# 	potential = {
+# 		technology_group = indian
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		technology_group = indian
+# 		current_age = age_of_reformation
+# 	}
+# 	embargo_efficiency = 0.2
+# 	trade_value_modifier = 0.1
+# 	global_trade_power = -0.1
+# }
+# # Age 2 - absolutism
+# technology_group_indian_2_modifier = {
+# 	potential = {
+# 		technology_group = indian
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		technology_group = indian
+# 		current_age = age_of_absolutism
+# 	}
+# 	embargo_efficiency = 0.4
+# 	trade_value_modifier = 0.15
+# 	global_trade_power = -0.15
+# }
+# # Age 3 - revolutions
+# technology_group_indian_3_modifier = {
+# 	potential = {
+# 		technology_group = indian
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		technology_group = indian
+# 		current_age = age_of_revolutions
+# 	}
+# 	embargo_efficiency = 0.6
+# 	trade_value_modifier = 0.2
+# 	global_trade_power = -0.2
+# }
+
+# ############# african ####################
+# # Age 0 - discovery
+# technology_group_african_0_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+# 	build_cost = -0.05
+# 	build_time = +0.25
+# 	inflation_reduction = 0.025
+# }
+# # Age 1 - reformation
+# technology_group_african_1_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+# 	build_cost = -0.1
+# 	build_time = +0.5
+# 	inflation_reduction = 0.05
+# }
+# # Age 2 - absolutism
+# technology_group_african_2_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+# 	build_cost = -0.15
+# 	build_time = +0.75
+# 	inflation_reduction = 0.075
+# }
+# # Age 3 - revolutions
+# technology_group_african_3_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = east_african
+# 			technology_group = central_african
+# 			technology_group = sub_saharan
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+# 	build_cost = -0.2
+# 	build_time = +1.0
+# 	inflation_reduction = 0.1
+# }
+
+# ############# muslim ####################
+# # Age 0 - discovery
+# technology_group_muslim_0_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+# 	technology_cost = 0.001
+# 	governing_cost = -0.025
+# 	global_tax_modifier = 0.05
+# }
+# # Age 1 - reformation
+# technology_group_muslim_1_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+# 	technology_cost = 0.05
+# 	governing_cost = -0.05
+# 	global_tax_modifier = 0.1
+# }
+# # Age 2 - absolutism
+# technology_group_muslim_2_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+# 	technology_cost = 0.1
+# 	governing_cost = -0.075
+# 	global_tax_modifier = 0.15
+# }
+# # Age 3 - revolutions
+# technology_group_muslim_3_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = ottoman
+# 			technology_group = muslim
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+# 	technology_cost = 0.15
+# 	governing_cost = -0.1
+# 	global_tax_modifier = 0.2
+
+# }
+
+# ############# American ####################
+# # Age 0 - discovery
+# technology_group_american_0_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_discovery
+# 	}
+# 	min_autonomy = 10
+# 	colony_cost_modifier = -0.1
+# 	global_colonial_growth = 10
+# }
+# # Age 1 - reformation
+# technology_group_american_1_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_reformation
+# 	}
+# 	min_autonomy = 15
+# 	colony_cost_modifier = -0.2
+# 	global_colonial_growth = 20
+# }
+# # Age 2 - absolutism
+# technology_group_american_2_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_absolutism
+# 	}
+# 	min_autonomy = 20
+# 	colony_cost_modifier = -0.3
+# 	global_colonial_growth = 30
+# }
+# # Age 3 - revolutions
+# technology_group_american_3_modifier = {
+# 	potential = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		OR = {
+# 			technology_group = north_american 
+# 			technology_group = mesoamerican
+# 			technology_group = south_american
+# 			technology_group = andean
+# 			technology_group = aboriginal_tech
+# 			technology_group = polynesian_tech
+# 			technology_group = high_american
+# 		}
+# 		current_age = age_of_revolutions
+# 	}
+# 	min_autonomy = 25
+# 	colony_cost_modifier = -0.4
+# 	global_colonial_growth = 40
+
+# }
+
+# ############# nomad ####################
+# # Age 0
+# technology_group_nomad_0_modifier = {
+# 	potential = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_discovery
+# 	}
+# 	development_cost_modifier = 0.05
+# 	global_autonomy = -0.025
+# 	global_unrest = -2
+# }
+# # Age 1 - reformation
+# technology_group_nomad_1_modifier = {
+# 	potential = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_reformation
+# 	}
+
+# 	trigger = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_reformation
+# 	}
+# 	development_cost_modifier = 0.1
+# 	global_autonomy = -0.05
+# 	global_unrest = -4
+# }
+# # Age 2 - absolutism
+# technology_group_nomad_2_modifier = {
+# 	potential = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	trigger = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_absolutism
+# 	}
+# 	development_cost_modifier = 0.15
+# 	global_autonomy = -0.075
+# 	global_unrest = -6
+# }
+# # Age 3 - revolutions
+# technology_group_nomad_3_modifier = {
+# 	potential = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	trigger = {
+# 		technology_group = nomad_group
+# 		current_age = age_of_revolutions
+# 	}
+# 	governing_cost = -0.2
+# 	global_autonomy = -0.1
+# 	global_unrest = -8
+# }

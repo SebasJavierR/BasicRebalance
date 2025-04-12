@@ -6,6 +6,109 @@
  base_age_1_balance_modifier:0 "Base age of Reformation balance modifier"
  base_age_2_balance_modifier:0 "Base age of Absolutism balance modifier"
  base_age_3_balance_modifier:0 "Base age of Revolutions balance modifier"
+ america_modifier:0 "Capital in the new world"
+ hydra_indipendent_power:0 "Indipendent Power"
+ hydra_minor_power:0 "Minor Power"
+ hydra_subject_nation:0 "Subject Nation"
+ hydra_subject_nation_tributary:0 "Tributary Nation"
 
- SLACK_TEXT:1 "§YSlacken Recruiting Standards§! cost $DROP|R$ Army Professionalism and give:\nMonthly Manpower: §G+100%§!"
- CANT_SLACKEN_TOO_LOW:0 "We have too low Army Professionalism to slacken recruiting standards. We need at least $NEED|Y$ Army Professionalism first. It would give:\nMonthly Manpower: §G+100%§!\nYearly Army Professionalism: §R-5.0%§!"
+
+ #Bancarrota
+ hydra_notifications.1.t:0 "[bankrupted_player.GetName] is in §Rbankruptcy§!"
+ hydra_notifications.1.d:0 "Every player in the lobby will get a §Gnotification§! about your §Rbankruptcy§!. Maybe you should prepear for war."
+ hydra_notifications.1.a:0 "We need to prepare for the inevitable."
+ hydra_notifications.2.t:0 "[bankrupted_player.GetName] is in §Rbankruptcy§!"
+ hydra_notifications.2.d:0 "Every player in the lobby received a §Gnotification§! about [bankrupted_player.GetName] §Rbankruptcy§!. We should move fast and size this oportunity for easy land and money before other take it or the bankruptcy expiers. We have 5 years."
+ hydra_notifications.2.a:0 "It sounds like a golden opportunity."
+
+ #Eventos tecnologia africa
+ hydra_technology.1.t:0 "Hydra Humanitarian aid"
+ hydra_technology.1.d:0 "In an effort to make Africans more fun, we added 1 free technology to african countries, so they can start without disadvantages."
+ hydra_technology.1.a:0 "Give me my new technology!"
+ hydra_technology.2.t:0 "Hydra Humanitarian aid"
+ hydra_technology.2.d:0 "In an effort to make Africans more fun, we added 1 free technology to african countries, so they can start without disadvantages."
+ hydra_technology.2.a:0 "Give me my new technology!"
+ hydra_technology.3.t:0 "Hydra Humanitarian aid"
+ hydra_technology.3.d:0 "In an effort to make Africans more fun, we added 1 free technology to african countries, so they can start without disadvantages."
+ hydra_technology.3.a:0 "Give me my new technology!"
+ hydra_technology.4.t:0 "Hydra Humanitarian aid"
+ hydra_technology.4.d:0 "In an effort to make Africans more fun, we added 1 free technology to african countries, so they can start without disadvantages."
+ hydra_technology.4.a:0 "Give me my new technology!"
+
+ #Otomanos Desastre
+ tur_had_power_struggle_for_five_years_tt:0 "Had the §YInternal Power Struggle§! disaster for §Y5 years§!."
+ hydra_decadence_force_max_title:0 "Force the Otoman decadence"
+ hydra_decadence_force_max_desc:0 "If you are not able to achieve 100% decadence, You can use this decision so you do not slowly die."
+ hydra_tur_force_decadence_malus_modifier:0 "Force decadence penalty"
+ hydra_tur_force_decadence_modifier:0  "Force decadence"
+
+ #Misiones Francia
+ fra_hydra_alternatively_10_dev_spread_and_tt:0 "\n§G10§! £adm£ £dip£ £mil£ Development will be distributed in §YBurgundian§! provinces."
+ fra_burg_succession_hydra_title:0 "Burgundian Succession (2)"
+ fra_burg_succession_hydra_desc:0 "The upstart Dukes of Burgundy fancy themselves a great power in their own right, yet in truth they are a mere vassal. We should remind them of this fact."
+
+ #pips (caballeria faltante)
+ heavy_knight:0 "Latin Heavy Knights"
+ heavy_knightDESCR:0 "Latin Heavy Knights"
+
+ #Alianza rota hace menos de 5 años
+ allie_less_than_5_years_ago_modifier:0 "Was allie with other player less than 5 years ago"
+ ended_alliance_flag:0  "Was allie with other player less than 5 years ago"
+
+ ################
+ #Hydra 2.0
+ ################
+ #Nerf Suiza defensividad
+ hydra_defensiveness_reduction_modifier:0 "Swiztherland defensiveness outside Swiztherland"
+
+ #Player Colony
+ player_colony:0 "Player Colony"
+ player_colony_long_desc:0 "A Player Colony will automatically be assigned to human players for balance purposes."
+ player_colony_title:0 "Player Colony"
+ player_colony_title_plural:0 "Player Colonies"
+ player_colony_overlord:0 "Player Colony Overlord"
+ player_colony_subject:0 "Player Colony Subject"
+ player_colony_is_our:0 "§Y$NAME$§! is our Player Colony."
+ player_colony_government:0 "Player Colony"
+ player_colony_government_desc:0 "A Player Colony is a colony type that is directly controlled by a human player."
+ indipendent_administration:0 "Indipendent Administration"
+ indipendent_economy:0 "Indipendent Economy"
+ indipendent_army:0 "Indipendent Army"
+ indipendent_power:0 "Indipendent Power"
+
+ #Province modifiers
+ england_continantal_army_hydra_province_modifiers:0 "England Continental Army"
+ france_channel_fleet_hydra_province_modifiers:0 "France Channel Fleet"
+ netherlands_fire_arms_imports_hydra_province_modifiers:0 "Fire Arms Imports"
+
+ #Naval Reduction
+ hydra_naval_reduction_HOL_modifier:0 "Prioritize the army"
+ hydra_naval_reduction_GBR_modifier:0 "Prioritize the army"
+ hydra_naval_reduction_POR_modifier:0 "Prioritize the army"
+ hydra_naval_reduction_MOR_modifier:0 "Prioritize the army"
+ hydra_naval_modernization_MOR_modifier:0 "Modernize the Navy"
+
+ hydra_naval_reduction_HOL_title:0 "Prioritize the army"
+ hydra_naval_reduction_GBR_title:0 "Prioritize the army"
+ hydra_naval_reduction_POR_title:0 "Prioritize the army"
+ hydra_naval_reduction_MOR_title:0 "Prioritize the army"
+ hydra_naval_modernization_MOR_title:0 "Modernize the Navy"
+
+ hydra_naval_reduction_HOL_desc:0 "For 50 years we will prioritize the military, part of our national ideas will be nerfed, in exchange for improving our military. Once used we will not be able to reverse the decision for another 50 years."
+ hydra_naval_reduction_GBR_desc:0 "For 50 years we will prioritize the military, part of our national ideas will be nerfed, in exchange for improving our military. Once used we will not be able to reverse the decision for another 50 years."
+ hydra_naval_reduction_POR_desc:0 "For 50 years we will prioritize the military, part of our national ideas will be nerfed, in exchange for improving our military. Once used we will not be able to reverse the decision for another 50 years."
+ hydra_naval_reduction_MOR_desc:0 "For 50 years we will prioritize the military, part of our national ideas will be nerfed, in exchange for improving our military. Once used we will not be able to reverse the decision for another 50 years."
+ hydra_naval_modernization_MOR_desc:0 "We must abandon the old ways of fighting at sea and adapt to modernity."
+
+
+ ################
+ #Hydra 3.0
+ ################
+
+ impossible_to_block_strait_modifier:0 "Impossible to block strait"
+ impossible_to_block_strait_modifier_desc:0 "This strait is imposible to block by naval forces"
+ make_carthage_capital_title:0 "Move the capital to Carthage"
+ hydra_french_empire_title:0 "Form The French Empire"
+ hydra_french_empire_title_desc:0 "Form The French Empire"
+ FRENCH_EMPIRE:0 "French Empire"
+ hydra_fra_empire_modifier:0 "The French Empire Return"

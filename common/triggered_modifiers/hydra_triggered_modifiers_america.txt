@@ -1,0 +1,80 @@
+#low_tech_autonomy_1_modifier = {
+# 	potential = {
+# 		ROOT = {
+# 			ai = no	
+# 		}
+# 		adm_tech = 1
+# 		NOT = { adm_tech = 2 }
+# 	}
+
+# 	trigger = {
+# 		any_country = {
+# 			total_development = ROOT
+# 		}	
+# 		adm_tech = 1
+# 		NOT = { adm_tech = 2 }
+# 	}
+# 	global_autonomy = 0.1
+# 	autonomy_change_time = 0.5
+	
+# }
+
+#low_tech_autonomy_2_modifier = {
+# 	potential = {
+# 		ROOT = {
+# 			ai = no	
+# 		}
+# 		adm_tech = 2
+# 		NOT = { adm_tech = 3 }
+# 	}
+
+# 	trigger = {
+# 		any_country = {
+# 			total_development = ROOT
+# 		}	
+# 		adm_tech = 2
+# 		NOT = { adm_tech = 3 }
+# 	}
+# 	global_autonomy = 0.05
+# 	autonomy_change_time = 0.25
+	
+# }
+
+america_modifier = {
+	potential = {
+		ROOT = {
+			ai = no	
+		}
+		OR = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = new_world
+					continent = oceania
+				}
+			}
+			is_colonial_nation = yes
+		}
+	}
+
+	trigger = {
+		any_country = {
+			total_development = ROOT
+		}	
+		OR = {
+			capital_scope = {
+				OR = {
+					continent = north_america
+					continent = south_america
+					continent = new_world
+					continent = oceania
+				}
+			}
+			is_colonial_nation = yes
+		}
+	}
+	all_power_cost = 0.2
+	min_autonomy = 30
+	colony_cost_modifier = 0.5
+}

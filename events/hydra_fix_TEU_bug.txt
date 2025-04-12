@@ -1,0 +1,257 @@
+# Flavour events for Teutonic Order - The Prussian Confederation
+# By Daniel Tolman
+
+namespace = hydra_fix_TEU_bug
+normal_or_historical_nations = yes
+
+# Prussian Confederation rises up
+country_event = {
+	id = hydra_fix_TEU_bug.1			#Toco este evento para arreglar un problema, con haberle apagado los estamentos a las IAs,
+	title = "flavor_teu.EVTNAME1"
+	desc = "flavor_teu.EVTDESC1"
+	picture = ANGRY_MOB_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		was_player = NO
+		is_year = 1460
+		NOT = { is_year = 1500 }
+		tag = TEU
+		is_subject = no
+		exists = POL
+		is_neighbor_of = POL
+		POL = { is_subject = no }
+		POL = { num_of_cities = 10 }
+		num_of_cities = 5
+		OR = {
+			NOT = { exists = DNZ }
+			DNZ = {
+				is_subject_of = ROOT
+			}
+		}
+		OR = {
+			AND = {
+				owns = 43
+				controls = 43
+			}
+			DNZ = { owns = 43 controls = 43 }
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.1
+			is_year = 1460
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = pru_confederation_happened
+			# add cores to DNZ based on burgher land share
+			if = {
+				limit = {
+					#estate_influence = {
+						#estate = estate_burghers
+						#influence = 40
+					#}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					#estate_influence = {
+						#estate = estate_burghers
+						#influence = 50
+					#}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					#estate_influence = {
+						#estate = estate_burghers
+						#influence = 60
+					#}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 70
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						estate = estate_burghers
+						influence = 80
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { is_core = DNZ }
+						OR = {
+							area = east_prussia_area
+							area = west_prussia_area
+						}
+						any_neighbor_province = {
+							is_core = DNZ
+						}
+					}
+					add_core = DNZ
+					if = {
+						limit = { is_part_of_hre = yes }
+						set_in_empire = no
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						exists = DNZ
+					}
+				}
+				release = DNZ
+				DNZ = {
+					change_government = republic
+					add_government_reform = oligarchy_reform
+					adopt_reform_progress = ROOT
+					hidden_effect = {
+						if = { limit = { is_part_of_hre = yes } set_in_empire = no }
+					}
+				}
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						is_core = DNZ
+					}
+					cede_province = DNZ
+				}
+			}
+			DNZ = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.6
+						cavalry = 0.3
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					build_to_forcelimit = {
+						galley = 0.3
+						light_ship = 0.3
+						transport = 0.2
+					}
+				}
+			}
+		}
+	}
+	
+	option = { # Go to war
+		name = "flavor_teu.1.a"
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					war_exhaustion = 10
+				}
+			}
+			 
+		}
+		declare_war_with_cb = {
+			who = DNZ
+			casus_belli = cb_core
+			war_goal_province = 43
+		}
+		custom_tooltip = flavor_teu.1.tooltip
+		hidden_effect = {
+			POL = {
+				country_event = { id = flavor_teu.2 }
+			}
+			POL = {
+				create_guarantee = DNZ
+			}
+		}
+	}
+}

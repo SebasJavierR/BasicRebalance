@@ -1,0 +1,75 @@
+# base_age_0_balance_modifier = {
+# 	potential = {
+# 		#ROOT = {
+# 		#	ai = no	
+# 		#}
+# 		current_age = age_of_discovery
+# 	}
+
+# 	trigger = {
+# 		any_country = {
+# 			total_development = ROOT
+# 		}		
+# 		current_age = age_of_discovery
+# 	}
+	
+# }
+
+base_age_1_balance_modifier = {
+	potential = {
+		#ROOT = {
+			#ai = no	
+		#}
+		current_age = age_of_reformation
+	}
+
+	trigger = {
+		any_country = {
+			total_development = ROOT
+		}		
+		current_age = age_of_reformation
+	}
+	ae_impact = -0.20
+	#province_warscore_cost = -0.10
+	#garrison_damage = 0.1
+}
+
+base_age_2_balance_modifier = {
+	potential = {
+		#ROOT = {
+			#ai = no	
+		#}
+		current_age = age_of_absolutism
+	}
+
+	trigger = {
+		any_country = {
+			total_development = ROOT
+		}		
+		current_age = age_of_absolutism
+	}
+	ae_impact = -0.40
+	#province_warscore_cost = -0.20
+	#garrison_damage = 0.2
+}
+
+base_age_3_balance_modifier = {
+	potential = {
+		#ROOT = {
+		#	ai = no	
+		#}
+		current_age = age_of_revolutions
+	}
+
+	trigger = {
+		any_country = {
+			total_development = ROOT
+		}		
+		current_age = age_of_revolutions
+	}
+	ae_impact = -0.60
+	#province_warscore_cost = -0.20
+	max_absolutism = 25
+	max_absolutism_effect = 0.10
+	#garrison_damage = 0.3
+}

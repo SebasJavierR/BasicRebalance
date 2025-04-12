@@ -1,0 +1,34 @@
+#925 - Tuskegee
+
+#owner = COW
+#controller = COW
+owner = CRE
+controller = CRE
+add_core = CRE
+culture = creek
+religion = totemism
+capital = "Tuskegee"
+trade_goods = cotton
+hre = no
+base_tax = 6 
+base_production = 4
+base_manpower = 5
+is_city = yes
+#add_core = COW
+native_size = 10
+native_ferocity = 6
+native_hostileness = 2
+
+
+
+discovered_by = north_american
+
+1540.1.1 = { discovered_by = SPA } # Hernando De Soto
+
+1814.8.9 = {
+	owner = USA
+	controller = USA
+	add_core = USA
+	culture = american
+	religion = protestant 
+} #Treaty of Fort Jackson ending the Creek War

@@ -1,0 +1,272 @@
+england_continantal_army_hydra_province_modifiers = {
+	#En Caleis(87)
+	#add_province_triggered_modifier = england_continantal_army_hydra_province_modifiers
+	potential = {
+		always = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			OR= {
+				tag = ENG
+				tag = GBR
+				tag = AVE
+			}
+			NOT = { alliance_with = FRA }
+		}
+	}
+
+	infantry_power = 0.05
+	land_morale = 0.05
+
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+france_channel_fleet_hydra_province_modifiers = {
+	#En Caleis(87)
+	#add_province_triggered_modifier = france_channel_fleet_hydra_province_modifiers
+	potential = {
+		always = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			tag = FRA
+			NOT = { alliance_with = ENG }
+			NOT = { alliance_with = GBR }
+			NOT = { alliance_with = AVE }
+		}
+	}
+
+
+	naval_morale = 0.1
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+netherlands_fire_arms_imports_hydra_province_modifiers = {
+	#En Caleis(87)
+	#add_province_triggered_modifier = netherlands_fire_arms_imports_hydra_province_modifiers
+	potential = {
+		always = yes
+	}
+	
+	#viewer = {
+	#}
+	
+	trigger = {
+		owner = {
+			OR= {
+				tag = HOL
+				tag = NED
+			}
+		}	
+	}
+
+	fire_damage = 0.05
+	morale_damage_received = -0.05
+
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+# door_to_iberia_hydra_province_modifiers = {
+# 	#En Rosellon(197)
+# 	#add_province_triggered_modifier = door_to_iberia_hydra_province_modifiers
+# 	potential = {
+# 		always = yes
+# 	}
+	
+# 	#viewer = {
+# 	#}
+	
+# 	trigger = {
+# 		owner = {
+# 			OR= {
+# 				tag = FRA
+# 				tag = CAS
+# 				tag = SPA
+# 			}
+
+# 			num_of_owned_provinces_with = {
+# 				area = catalonia_area
+# 				value = 4
+# 			}
+# 		}
+# 	}
+
+# 	#infantry_power = 0.1
+	
+# 	#Province scope
+# 	on_activation = {
+	
+# 	}
+	
+# 	on_deactivation = {
+	
+# 	}	
+# }
+
+# king_on_prussia_hydra_province_modifiers = {
+# 	#En Konighsberg (342)
+# 	#add_province_triggered_modifier = king_on_prussia_hydra_province_modifiers
+# 	potential = {
+# 		always = yes
+# 	}
+	
+# 	#viewer = {
+# 	#}
+	
+# 	trigger = {
+# 		owner = {
+# 			OR= {
+# 				tag = BRA
+# 				tag = PRU
+# 				tag = SCA
+# 				tag = SWE
+# 				tag = DIN
+# 				tag = PLC
+# 				tag = POL
+# 			}
+
+# 			num_of_owned_provinces_with = {
+# 				area = east_prussia_area
+# 				value = 5
+# 			}
+# 		}
+# 	}
+
+# 	infantry_shock = 0.1
+	
+# 	#Province scope
+# 	on_activation = {
+	
+# 	}
+	
+# 	on_deactivation = {
+	
+# 	}	
+# }
+
+# the_door_to_russia_hydra_province_modifiers = {
+# 	#En Konighsberg (342)
+# 	#add_province_triggered_modifier = the_door_to_russia_hydra_province_modifiers
+# 	potential = {
+# 		always = yes
+# 	}
+	
+# 	#viewer = {
+# 	#}
+	
+# 	trigger = {
+# 		owner = {
+# 			OR= {
+# 				tag = MOS
+# 				tag = RUS
+# 				tag = SCA
+# 				tag = SWE
+# 				tag = DIN
+# 				tag = PLC
+# 				tag = POL
+# 			}
+
+# 			num_of_owned_provinces_with = {
+# 				area = east_prussia_area
+# 				value = 5
+# 			}
+# 		}
+# 	}
+
+# 	#
+# 	#naval_forcelimit = 
+# 	global_sailors = 5000
+# 	naval_forcelimit = 15
+# 	sailors_recovery_speed = 0.05
+	
+# 	#Province scope
+# 	on_activation = {
+	
+# 	}
+	
+# 	on_deactivation = {
+	
+# 	}	
+# }
+
+# swidish_germany_hydra_province_modifiers = {
+# 	#En stettin (1859)
+# 	#add_province_triggered_modifier = swidish_germany_hydra_province_modifiers
+# 	potential = {
+# 		always = yes
+# 	}
+	
+# 	#viewer = {
+# 	#}
+	
+# 	trigger = {
+# 		owner = {
+# 			OR= {
+# 				tag = MOS
+# 				tag = RUS
+# 				tag = SCA
+# 				tag = SWE
+# 				tag = DIN
+# 				tag = PLC
+# 				tag = POL
+# 			}
+
+# 			num_of_owned_provinces_with = {
+# 				area = east_prussia_area
+# 				value = 5
+# 			}
+# 		}
+# 	}
+
+# 	#
+# 	#naval_forcelimit = 
+# 	##global_sailors = 5000
+# 	#naval_forcelimit = 15
+# 	#sailors_recovery_speed = 0.05
+	
+# 	#Province scope
+# 	on_activation = {
+	
+# 	}
+	
+# 	on_deactivation = {
+	
+# 	}	
+# }

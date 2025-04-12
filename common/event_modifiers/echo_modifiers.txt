@@ -1,0 +1,12 @@
+echo_commandant_cooldown = {
+}
+echo_commandant_cooldown_100 = {
+}
+echo_grand_captain_cooldown = {
+}
+echo_grand_captain_cooldown_100 = {
+}
+echo_armyreform_cooldown = {
+}
+echo_militaryreform_cooldown = {
+}

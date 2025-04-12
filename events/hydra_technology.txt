@@ -1,0 +1,141 @@
+namespace = hydra_technology
+
+country_event = {
+	id = hydra_technology.1
+	title = hydra_technology.1.t
+	desc = hydra_technology.1.d
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = KON		#Kongo
+		NOT = { is_year = 1450 }
+		AI = No
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = hydra_technology.1.a
+			if = {
+				limit = { NOT = { adm_tech = 3 } }
+				add_adm_tech = 1
+			}
+			if = {
+				limit = { NOT = { dip_tech = 3 } }
+				add_dip_tech = 1
+			}
+			if = {
+				limit = { NOT = { mil_tech = 3 } }
+				add_mil_tech = 1
+			}
+	}
+}
+
+country_event = {
+	id = hydra_technology.2
+	title = hydra_technology.2.t
+	desc = hydra_technology.2.d
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = SON		#Songhai
+		NOT = { is_year = 1450 }
+		AI = No
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = hydra_technology.2.a
+			if = {
+				limit = { NOT = { adm_tech = 3 } }
+				add_adm_tech = 1
+			}
+			if = {
+				limit = { NOT = { dip_tech = 3 } }
+				add_dip_tech = 1
+			}
+			if = {
+				limit = { NOT = { mil_tech = 3 } }
+				add_mil_tech = 1
+			}
+	}
+}
+
+country_event = {
+	id = hydra_technology.3
+	title = hydra_technology.3.t
+	desc = hydra_technology.3.d
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = RZW	#Butua
+		NOT = { is_year = 1450 }
+		AI = No
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = hydra_technology.3.a
+			if = {
+				limit = { NOT = { adm_tech = 3 } }
+				add_adm_tech = 1
+			}
+			if = {
+				limit = { NOT = { dip_tech = 3 } }
+				add_dip_tech = 1
+			}
+			if = {
+				limit = { NOT = { mil_tech = 3 } }
+				add_mil_tech = 1
+			}
+	}
+}
+
+country_event = {
+	id = hydra_technology.4
+	title = hydra_technology.4.t
+	desc = hydra_technology.4.d
+	picture = AFRICAN_BAD_WITH_MONARCH_eventPicture
+	
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = ZIM	#Butapa
+		NOT = { is_year = 1450 }
+		AI = No
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = hydra_technology.4.a
+			if = {
+				limit = { NOT = { adm_tech = 3 } }
+				add_adm_tech = 1
+			}
+			if = {
+				limit = { NOT = { dip_tech = 3 } }
+				add_dip_tech = 1
+			}
+			if = {
+				limit = { NOT = { mil_tech = 3 } }
+				add_mil_tech = 1
+			}
+	}
+}

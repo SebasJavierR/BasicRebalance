@@ -1,0 +1,21 @@
+﻿l_spanish:
+#critical events
+ echo_critical_events_title:0 "Eventos Criticos Disponibles"
+ echo_critical_events_desc:0 "Puede verificar qué eventos críticos aún están disponibles, una marca verde indica que está disponible y una cruz roja indica que ya se ha activado"
+ echo_radical_reform_decision:0 "Reformas Radicales"
+ echo_military_reform_decision:0 "Reformas Militares"
+ echo_commandant_decision:0 "Líder inspirador no fue usado anteriormente o en los últimos 100 años"
+ echo_grand_captain_decision:0 "Gran capitán no fue usado previamente o en los últimos 100 años"
+ echo_commandant_cooldown:0 "Lider Inspirador Enfriamiento"
+ echo_commandant_cooldown_tooltip:0 "Talvez en otro momento..."
+ echo_grand_captain_cooldown:0 "Gran Capitán Enfriamiento"
+ echo_grand_captain_cooldown_tooltip:0 "Talvez en otro momento..."
+ echo_armyreform_cooldown:0 "No nos adelantemos a nosotros mismos ..."
+ echo_armyreform_cooldowntooltip:0 "Talvez en otro momento..."
+#Development Counter
+ development_counter_title:0 "Total clicks de desarrollo"
+ development_counter_desc:0 "Que tan tryhard sos?" 
+ development_counter_tt:0 "Mejoras de desarrollo:\n\n£adm£ Desarrollo obtenido: §G[Root.adm_dev_counter.GetValue]§! \n£dip£ Desarrollo obtenido: §G[Root.dip_dev_counter.GetValue]§! \n£mil£ Desarrollo obtenido: §G[Root.mil_dev_counter.GetValue]§! \n\nTotal Desarrollo obtenido: §G[Root.total_dev_counter.GetValue]§!"
+ development_counter_update_tt:0 "Agregar §YContador clicks de desarrollo§!".
+ echo_grand_captain_cooldown_100:0 "Recarga de Gran Capitán"
+ echo_commandant_cooldown_100:0 "Recarga de Líder inspirador"

@@ -9,34 +9,34 @@
 ##########################################################################
 
 difficulty_very_easy_player = {
-	global_manpower_modifier = 0.5
-	manpower_recovery_speed = 0.50
-	land_forcelimit_modifier = 0.5
-	naval_forcelimit_modifier = 0.5
-	production_efficiency = 0.5
-	global_tax_income = 60
-	global_regiment_cost = -0.33
-	global_ship_cost = -0.33
-	inflation_reduction = 0.05
-	global_unrest = -5
-	war_exhaustion = -0.05
-	core_creation = -0.25
-	advisor_pool = 1
-	diplomatic_upkeep = 1
-	free_leader_pool = 1
-	diplomatic_reputation = 2
-	interest = -2
-	improve_relation_modifier = 0.10
-	ae_impact = -0.33
-	yearly_corruption = -1.0
+	#global_manpower_modifier = 0.5
+	#manpower_recovery_speed = 0.50
+	#land_forcelimit_modifier = 0.5
+	#naval_forcelimit_modifier = 0.5
+	#production_efficiency = 0.5
+	#global_tax_income = 60
+	#global_regiment_cost = -0.33
+	#global_ship_cost = -0.33
+	#inflation_reduction = 0.05
+	#global_unrest = -5
+	#war_exhaustion = -0.05
+	#core_creation = -0.25
+	#advisor_pool = 1
+	#diplomatic_upkeep = 1
+	#free_leader_pool = 1
+	#diplomatic_reputation = 2
+	#interest = -2
+	#improve_relation_modifier = 0.10
+	#ae_impact = -0.33
+	#yearly_corruption = -1.0
 }
 
 difficulty_easy_player = {
-	manpower_recovery_speed = 0.50
-	global_unrest = -5
-	interest = -2
-	ae_impact = -0.33
-	yearly_corruption = -1.0
+	#manpower_recovery_speed = 0.50
+	#global_unrest = -5
+	#interest = -2
+	#ae_impact = -0.33
+	#yearly_corruption = -1.0
 }
 
 difficulty_normal_player = {
@@ -62,33 +62,33 @@ difficulty_normal_ai = {
 }
 
 difficulty_hard_ai = {
-	manpower_recovery_speed = 0.50
-	global_unrest = -1
-	war_exhaustion = -0.05
-	interest = -1
-	ae_impact = -0.33
-	missionary_maintenance_cost = -0.15
+	#manpower_recovery_speed = 0.50
+	#global_unrest = -1
+	#war_exhaustion = -0.05
+	#interest = -1
+	#ae_impact = -0.33
+	#missionary_maintenance_cost = -0.15
 
 }
 
 difficulty_very_hard_ai = {
-	manpower_recovery_speed = 0.50
-	global_manpower_modifier = 0.5
-	land_forcelimit_modifier = 0.5
-	naval_forcelimit_modifier = 0.5
-	global_regiment_cost = -0.33
-	global_ship_cost = -0.33
-	inflation_reduction = 0.05
-	global_unrest = -2
-	war_exhaustion = -0.05
-	core_creation = -0.25
-	idea_cost = -0.25
-	interest = -1
-	improve_relation_modifier = 0.5
-	development_cost = -0.2
-	build_cost = -0.25
-	ae_impact = -0.33
-	missionary_maintenance_cost = -0.3
+	#manpower_recovery_speed = 0.50
+	#global_manpower_modifier = 0.5
+	#land_forcelimit_modifier = 0.5
+	#naval_forcelimit_modifier = 0.5
+	#global_regiment_cost = -0.33
+	#global_ship_cost = -0.33
+	#inflation_reduction = 0.05
+	#global_unrest = -2
+	#war_exhaustion = -0.05
+	#core_creation = -0.25
+	#idea_cost = -0.25
+	#interest = -1
+	#improve_relation_modifier = 0.5
+	#development_cost = -0.2
+	#build_cost = -0.25
+	#ae_impact = -0.33
+	#missionary_maintenance_cost = -0.3
 }
 
 
@@ -112,6 +112,7 @@ port = {
 
 in_state = {
 	local_institution_spread = 0.10
+	local_development_cost = -0.1			#Hydra, Agregado ya que se removio el edicto estatal de -10% devcost
 }
 
 in_capital_state = {
@@ -137,7 +138,7 @@ non_coastal = {
 }
 
 coastal_sea = {
-	local_naval_engagement_modifier = -0.20
+	#local_naval_engagement_modifier = -0.20	#Remove so is more noob friendly, no need to calculate diferent combat with for different sea tile
 }
 
 tropical = {
@@ -187,6 +188,7 @@ land_province = {
 
 mild_winter = {
 	local_hostile_attrition = 1
+	max_attrition = 0
 	supply_limit_modifier = -0.1
 
 	picture = "winter_mild"
@@ -194,6 +196,7 @@ mild_winter = {
 
 normal_winter = {
 	local_hostile_attrition = 2
+	max_attrition = 1
 	supply_limit_modifier = -0.2
 	migration_cost = 0.1
 
@@ -202,6 +205,7 @@ normal_winter = {
 
 severe_winter = {
 	local_hostile_attrition = 3
+	max_attrition = 2
 	supply_limit_modifier = -0.3
 	migration_cost = 0.2
 
@@ -210,24 +214,24 @@ severe_winter = {
 
 mild_monsoon = {
 	local_hostile_attrition = 0.5
-	local_hostile_movement_speed = -0.20
-	local_friendly_movement_speed = -0.20
+	local_hostile_movement_speed = -0.10			#Hydra, Valor original 0.2, monzon y tierra quemada pueden causar que nunca llegues a la provincia
+	local_friendly_movement_speed = -0.10			#Hydra, Valor original 0.2, monzon y tierra quemada pueden causar que nunca llegues a la provincia
 
 	picture = "monsoon_mild"
 }
 
 normal_monsoon = {
 	local_hostile_attrition = 1
-	local_hostile_movement_speed = -0.25
-	local_friendly_movement_speed = -0.25
+	local_hostile_movement_speed = -0.20		#Hydra, Valor original 0.25, monzon y tierra quemada pueden causar que nunca llegues a la provincia
+	local_friendly_movement_speed = -0.20		#Hydra, Valor original 0.25, monzon y tierra quemada pueden causar que nunca llegues a la provincia
 
 	picture = "monsoon_normal"
 }
 
 severe_monsoon = {
 	local_hostile_attrition = 1.5
-	local_hostile_movement_speed = -0.50
-	local_friendly_movement_speed = -0.50
+	local_hostile_movement_speed = -0.30		#Hydra, Valor original 0.5, monzon y tierra quemada pueden causar que nunca llegues a la provincia
+	local_friendly_movement_speed = -0.30		#Hydra, Valor original 0.5, monzon y tierra quemada pueden causar que nunca llegues a la provincia
 
 	picture = "monsoon_severe"
 }
@@ -542,6 +546,11 @@ active_missionary = {
 # Core province of the owner's culture group, while fighting a defensive war
 national_defense = {
 	local_unrest = -5
+	local_defensiveness = 0.1				#Hydra, Buffos para el defensor
+	local_manpower_modifier = 0.1			#Hydra, Buffos para el defensor
+	supply_limit_modifier = 0.1				#Hydra, Buffos para el defensor
+	local_tax_modifier = 0.1				#Hydra, Buffos para el defensor
+	local_production_efficiency = 0.1		#Hydra, Buffos para el defensor
 }
 
 
@@ -573,7 +582,7 @@ scorched_earth = {
 ##########################################################################
 
 base_values = {
-	max_absolutism = 65						#65
+	max_absolutism = 75						#Hydra, valor original 65
 	merchants = 2							#Start with 2 merchants
 	diplomats = 2							#Start with 2 diplomats..
 	missionaries = 1						#1 missionary
@@ -592,7 +601,7 @@ base_values = {
 	republican_tradition = 1
 	monthly_fervor_increase = 1
 	vassal_income = 0.10
-	horde_unity = -2
+	#horde_unity = -2						#Hydra, valor original -2
 	devotion = -0.5
 	meritocracy = -2
 	governing_capacity = 200
@@ -629,6 +638,8 @@ war_taxes = {
 stability = {
 	global_trade_power = 0.01			#1% chance each step.
 	global_spy_defence = 0.05				#-15 to +15% modifier
+	monthly_cultural_unity = 0.1
+	monthly_divine_authority = 0.05
 }
 
 positive_stability = {
@@ -645,11 +656,12 @@ positive_stability = {
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
 	monthly_ottoman_decadence = -0.05
+	monthly_authority_power = -0.01
 }
 
 privateering = {
 	pr_captains_influence = 0.1
-	privateer_efficiency = -1.0
+	privateer_efficiency = -1.0			#Evitar el abuso de la pirateria indefendible.
 }
 
 negative_stability = {
@@ -662,6 +674,7 @@ negative_stability = {
 	yearly_harmony = 0.25
 	monthly_russian_modernization = 0.03
 	monthly_ottoman_decadence = -0.15
+	monthly_authority_power = 0.05
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -698,12 +711,12 @@ cancelled_loan = {
 	#no effects
 }
 
-bank_loan = {
-	#no effects
-	build_cost = 0.01
-	great_project_upgrade_cost = 0.025
-	great_project_upgrade_cost = 0.025
-	center_of_trade_upgrade_cost = 0.025
+bank_loan = {		#Hydra, Parte del esfuerzo de nerfear las bancarrotas estrategicas
+	#build_cost = 0.025
+	build_time = 0.025 #0.1							#Hydra Agregado
+	#great_project_upgrade_cost = 0.025
+	#center_of_trade_upgrade_cost = 0.025
+	#interest = 0.05							#Unica forma conosida de bajar el limite de prestamos.
 }
 
 inflation = {
@@ -731,28 +744,35 @@ inflation = {
 	monthly_russian_modernization = -0.01
 }
 
-bankruptcy = {
-	interest = 5
+bankruptcy = {								#Hydra, Cambios en esta categoria son parte del esfuerzo de nerfear bancarrotas estrategicas o/y guerras a muerte
+	interest = 5 							
 	land_morale = -0.5
 	naval_morale = -0.5
 	reinforce_speed = -0.25					#Slower reinforce
-	bureaucrats_influence = 0.25
-	mr_guilds_influence = 0.25
 	manpower_recovery_speed = -1.0
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
 	monthly_fervor_increase = -1
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
+	yearly_absolutism = -2.0
+	technology_cost = 0.5
+	idea_cost = 0.5
+	great_project_upgrade_cost = 0.5
+	
+	defensiveness = -0.25
+	siege_ability = -0.25
+	#build_cost = 1
+	#build_time = 2
+	#all_power_cost = 0.5
+	
+	bureaucrats_influence = 0.25
+	mr_guilds_influence = 0.25
 	monthly_militarized_society = -0.5
 	monthly_prussian_militarized_society_1 = 0.02
 	monthly_prussian_militarized_society_2 = 0.05
 	monthly_prussian_militarized_society_3 = 0.075
-	yearly_absolutism = -2.0
-	technology_cost = 0.5
-	idea_cost = 0.5
 	imperial_mandate = -0.1
-	great_project_upgrade_cost = 0.5
 	monthly_russian_modernization = -1
 }
 
@@ -760,6 +780,9 @@ bankruptcy = {
 war = {
 	monthly_militarized_society = 0.1
 	rr_girondists_influence = 0.15
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_blood = 0.3
+	monthly_authority_power = -0.05
 }
 
 peace = {
@@ -772,38 +795,48 @@ peace = {
 	monthly_militarized_society = -0.1
 	monthly_ottoman_decadence = 0.1
 	monthly_asha_vahishta = 0.25
+	monthly_arabic_trade_influence_power = 0.1
+	monthly_cultural_unity = 0.1
+	monthly_blood = -0.05
+	monthly_authority_power = 0.1
 }
 
 unconditional_surrender = {
-	war_exhaustion = -0.1
+	war_exhaustion = -0.1			
 	global_autonomy = -0.1
 	global_institution_spread = 0.1
 }
 
 call_for_peace = {
-	war_exhaustion = 0.005
+	#war_exhaustion = 0.005
 }
 
-war_exhaustion = {
+war_exhaustion = {			#Hydra, No tan doloroso post guerra, pero mas doloroso mientras estas en guerra.
 	global_unrest = 1
-	global_regiment_recruit_speed = 0.02
-	global_ship_recruit_speed = 0.02
-	core_creation = 0.03
+	global_regiment_recruit_speed = 0.1
+	global_ship_recruit_speed = 0.1
+	#core_creation = 0.03
+	manpower_recovery_speed = -0.025
+	sailors_recovery_speed = -0.025
+	siege_ability = -0.01
+	global_trade_goods_size_modifier = -0.025
+	defensiveness = -0.01
+
+	monthly_militarized_society = -0.05
 	temples_influence = -0.05
 	mr_aristocrats_influence = -0.05
 	rr_girondists_influence = -0.05
 	rr_royalists_influence = 0.05
-	manpower_recovery_speed = -0.01
-	sailors_recovery_speed = -0.01
-	siege_ability = -0.01
-	global_trade_goods_size_modifier = -0.02
-	monthly_militarized_society = -0.05
+	monthly_arabic_trade_influence_power = -0.05
+	monthly_cultural_unity = -0.05
+	monthly_authority_power = 0.01
 }
 
 doom = {
 	technology_cost = 0.5
 	idea_cost = 0.2
 	ae_impact = -1
+	blood_gain_modifier = 1
 }
 
 authority = {
@@ -830,9 +863,9 @@ trade_refusal = {
 
 mercantilism = {
 	global_prov_trade_power_modifier = 2.0
-	embargo_efficiency = 1
 	burghers_loyalty_modifier = 0.1
 	vaisyas_loyalty_modifier = 0.1
+	embargo_efficiency = 1
 }
 
 army_tradition = {
@@ -858,11 +891,12 @@ navy_tradition = {
 	recover_navy_morale_speed = 0.1
 	naval_morale = 0.25
 	trade_steering = 1.0
-	#privateer_efficiency = 0.25
+	#privateer_efficiency = 0.25					#Hydra, parte del nerf a los piratas
 	enuchs_influence = 0.1
 	mr_traders_influence = 0.1
 	blockade_efficiency = 1
 	sailors_recovery_speed = 0.2
+	monthly_arabic_trade_influence_power = 0.2
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
 	allowed_geobukseon_fraction = 0.5
@@ -875,7 +909,7 @@ positive_piety = { #As of 1.23 Legalism
 	global_tax_modifier = 0.20
 	brahmins_muslim_loyalty_modifier = -0.1
 	church_loyalty_modifier = 0.1
-	dhimmi_loyalty_modifier = -0.1
+	piety_dhimmi_loyalty_modifier = -0.1
 }
 
 #For convenience, its multiplied by negative piety in code.
@@ -884,7 +918,7 @@ negative_piety = { #As of 1.23 Mysticism
 	global_missionary_strength = 0.03
 	idea_cost = -0.1
 	brahmins_muslim_loyalty_modifier = 0.1
-	church_loyalty_modifier = -0.1
+	piety_church_loyalty_modifier = -0.1
 	dhimmi_loyalty_modifier = 0.1
 }
 
@@ -902,9 +936,9 @@ defender_of_faith = {
 	monthly_asha_vahishta = 0.25
 }
 
-defender_of_faith_refused_cta = {
-	diplomatic_reputation = -1
-	monthly_asha_vahishta = -2
+defender_of_faith_refused_cta = {		
+	#diplomatic_reputation = -1				#Hydra, Removido, la diplo la desiden los jugadores.
+	#monthly_asha_vahishta = -2
 }
 
 emperor = {
@@ -999,6 +1033,8 @@ legitimacy = {
 	monthly_militarized_society = 0.05
 	max_absolutism = 20
 	nobles_loyalty_modifier = 0.1
+	monthly_cultural_unity = 0.2
+	monthly_divine_authority = 0.3
 }
 
 #Multiplied by current Horde Unity - 50
@@ -1016,6 +1052,7 @@ devotion = {
 	harmonization_speed = 0.5
 	monthly_piety_accelerator = 0.01
 	yearly_authority = 0.5
+	monthly_divine_authority = 0.1
 	yearly_patriarch_authority = 0.01
 	yearly_doom_reduction = 0.5
 	yearly_karma_decay = 0.1
@@ -1066,6 +1103,8 @@ corruption = {
 	monthly_heir_claim_increase = 0.025
 	monthly_russian_modernization = -1
 	monthly_ottoman_decadence = 10
+	monthly_arabic_trade_influence_power = -0.5
+	monthly_authority_power = 0.5
 }
 
 root_out_corruption = {
@@ -1083,34 +1122,34 @@ recovery_motivation = {
 	horde_unity = 10
 }
 
-luck = {
+luck = {		#Hydra removido porque si el host se lo deja activado por un bug puede terminar activo en el pais de un jugador
 	#core
-	global_missionary_strength = 0.01
-	stability_cost_modifier = -0.10
-	global_institution_spread = 0.1
-	monthly_splendor = 1
+	#global_missionary_strength = 0.01
+	#stability_cost_modifier = -0.10
+	#global_institution_spread = 0.1
+	#monthly_splendor = 1
 
 	#economy
-	mercenary_cost = -0.2
-	embracement_cost = -0.2
-	interest = -1
-	missionary_maintenance_cost = -0.1
+	#mercenary_cost = -0.2
+	#embracement_cost = -0.2
+	#interest = -1
+	#missionary_maintenance_cost = -0.1
 
 	#military
-	manpower_recovery_speed = 0.25
-	defensiveness = 0.1
-	siege_ability = 0.05
+	#manpower_recovery_speed = 0.25
+	#defensiveness = 0.1
+	#siege_ability = 0.05
 
 	#diplomacy
-	spy_offence = 0.1
-	improve_relation_modifier = 0.25
+	#spy_offence = 0.1
+	#improve_relation_modifier = 0.25
 
 	#government
-	global_unrest = -1
-	republican_tradition = 0.5
-	legitimacy = 1
-	ae_impact = -0.25
-	governing_capacity_modifier = 0.25
+	#global_unrest = -1
+	#republican_tradition = 0.5
+	#legitimacy = 1
+	#ae_impact = -0.25
+	#governing_capacity_modifier = 0.25
 
 }
 
@@ -1130,7 +1169,7 @@ over_extension = {
 prestige = {
 	global_trade_power = 0.15			#+15/-15 total bonus from prestige.
 	land_morale = 0.1
-	naval_morale = 0.1
+	naval_morale = 0.2						#Hydra, valor original 0.1 Mas moral dinamica deberia hacer menos relevante ideas rotas.
 	global_spy_defence = 0.1				#+10/-10
 	legitimacy = 1.0
 	improve_relation_modifier = 0.5
@@ -1158,6 +1197,8 @@ prestige = {
 	eunuchs_loyalty_modifier = 0.05
 	qizilbash_loyalty_modifier = 0.05
 	ghulams_loyalty_modifier = 0.05
+	monthly_divine_authority = 0.1
+	monthly_authority_power = -0.2
 }
 
 no_debate_in_parliament = {
@@ -1171,11 +1212,13 @@ republican_tradition = {
 	reform_progress_growth = 1.0
 	burghers_loyalty_modifier = 0.05
 	vaisyas_loyalty_modifier = 0.05
+	monthly_authority_power = -0.05
 }
 
 inverse_republican_tradition = {
 	stability_cost_modifier = 2.0
 	rr_jacobins_influence = -0.1
+	monthly_authority_power = 0.25
 }
 
 ########################################
@@ -1206,6 +1249,7 @@ religious_unity = {
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
 	yearly_harmony = 1
+	monthly_cultural_unity = 0.1
 }
 
 inverse_religious_unity = {
@@ -1227,7 +1271,7 @@ total_blockaded = {
 }
 
 uncontested_cores = {
-	prestige = -0.1
+	#prestige = -0.1						#Hydra, si te conquistan partes del pais no hay mas razones para seguir castigandore. Disminuir el snowball.
 }
 
 
@@ -1296,6 +1340,17 @@ BYZ_discipline = {
 	discipline = 0.05
 }
 
+soyurghal_base_overlord_modifiers = {
+	land_forcelimit_modifier = 0.05
+	soyurghals_amount_check_influence = 1 #used for exporting, invisible by default
+}
+
+soyurghal_base_modifiers = { #slightly weaker pronoia but without penalties
+	global_manpower = 5
+	global_manpower_modifier = 0.25
+	global_regiment_cost = -0.25
+}	
+
 tributary_state_behind_overlord_tech_adm = {
 	adm_tech_cost_modifier = -0.05
 }
@@ -1319,7 +1374,7 @@ trade_protectorate_low_development_subject_modifier = {
 }
 
 trade_protectorate_overlord_modifier = {
-	global_trade_power = 0.02
+	global_trade_power = 0.05
 	global_trade_goods_size_modifier = 0.02
 }
 
@@ -1341,6 +1396,7 @@ in_golden_era = {
 	naval_morale = 0.1
 	max_absolutism = 5
 	max_revolutionary_zeal = 10
+	monthly_arabic_trade_influence_power = 0.25
 }
 
 absolutism = {
@@ -1407,11 +1463,13 @@ power_projection = {
 	global_trade_power = 0.2
 	prestige = 0.5
 	land_morale = 0.1
-	naval_morale = 0.1
+	naval_morale = 0.2			#Hydra, valor original 0.1 Mas moral dinamica deberia hacer menos relevante ideas rotas.
 	legitimacy = 0.5
 	devotion = 0.5
 	horde_unity = 0.5
 	republican_tradition = 0.2
+	monthly_divine_authority = 0.05
+	monthly_authority_power = -0.1
 }
 
 power_projection_25 = {
@@ -1431,6 +1489,7 @@ naval_forcelimit = {
 
 trade_company_strong = {
 	merchants = 1
+	monthly_arabic_trade_influence_power = 0.01
 }
 
 large_colonial_nation = {
@@ -1552,6 +1611,7 @@ eyalet_modifier = {
 #scales to amount of up-to-date forts compared to total development
 maintained_forts = {
 	army_tradition = 1
+	nobles_loyalty_modifier_forts = 0.1 
 }
 
 gov_rank_1 = {
@@ -1609,8 +1669,8 @@ revolution_target = {
 	sailors_recovery_speed = 0.25
 }
 
-dishonoured_alliance =  {
-	diplomatic_reputation = -1
+dishonoured_alliance =  {		
+	#diplomatic_reputation = -1			#Hydra, la diplomacia la desiden los Jugadores.
 }
 
 drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
@@ -1627,6 +1687,7 @@ recruitment_sabotaged = {
 
 merchants_slandered = {
 	global_trade_power = -0.1
+	monthly_arabic_trade_influence_power = -0.1
 }
 
 discontent_sowed = {
@@ -1652,6 +1713,7 @@ scaled_trade_league_leader = { #scaled by number of members
 	global_sailors = 1000
 	land_forcelimit = 1
 	global_manpower = 1
+	monthly_authority_power = -0.01
 }
 
 in_trade_league = {
@@ -2029,9 +2091,10 @@ cawa_regiment = {
 }
 
 hussars_regiment = {
-	cavalry_shock = 1
-	morale_damage = 0.5
-	reinforce_speed = -0.5
+	#cavalry_shock = 1		#Hydra, Demaciado fuerte con los 100% de capacidad de combate que polonia puede acumular
+	cavalry_shock = 0.5
+	#morale_damage = 0.5
+	#reinforce_speed = -0.5
 }
 
 marine_regiment = {
@@ -2178,6 +2241,7 @@ over_governing_capacity_modifier = {
 	monthly_prussian_militarized_society_3 = -1
 	administrative_efficiency = -0.5
 	monthly_ottoman_decadence = 2
+	monthly_authority_power = 0.5
 }
 
 #Scales with used capacity, being at full capacity means 100% of the modifier
@@ -2195,27 +2259,29 @@ at_peace_revolutionary = { # Applied if at peace while reactionaries are borderi
 	yearly_revolutionary_zeal = -4
 }
 
-expanded_infrastructure = {
+expanded_infrastructure = {				#Hydra, Buffo general a expandir infrastructura para que la gente tienda a jugar mas alto, menos ancho.
 	allowed_num_of_buildings = 1
 	allowed_num_of_manufactories = 1
 	regiment_recruit_speed = -0.15
 	ship_recruit_speed = -0.15
 	local_defensiveness = 0.05
 	garrison_growth = 0.05
-	local_development_cost = -0.15
-	local_production_efficiency = 0.05
-	local_tax_modifier = 0.1
-	local_manpower_modifier = 0.05
-	local_sailors_modifier = 0.05
+	local_development_cost = -0.25		#0.15
+	local_production_efficiency = 0.1	#0.05
+	local_tax_modifier = 0.2			#0.1
+	local_manpower_modifier = 0.1		#0.05
+	local_sailors_modifier = 0.1		#0.05
 	local_ship_repair = 0.05
 	local_autonomy = -0.005
 	local_build_cost = -0.05
 	local_build_time = -0.05
 	province_trade_power_modifier = 0.05
 	trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 15
+	local_governing_cost_increase = 10	#15
 	local_governing_cost = 0.1
 	local_great_project_upgrade_cost = -0.05
+	land_forcelimit = 0.75				#0.00
+	naval_forcelimit = 1				#0.00
 }
 
 centralize_state = {
@@ -2231,9 +2297,11 @@ guru_teaching = {
 }
 
 diplomatic_reputation = {
+	num_of_soyurghals = 0.5
 }
 
 tolerance_own = {
+	monthly_divine_authority = 0.03
 }
 
 tolerance_heretic = {
@@ -2248,16 +2316,20 @@ num_accepted_cultures = {
 ruler_adm = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 }
 
 ruler_dip = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_arabic_trade_influence_power = 0.05
+	monthly_divine_authority = 0.01
 }
 
 ruler_mil = {
 	monthly_council_consensus = 0.1
 	monthly_egyptian_westernization = 0.05
+	monthly_divine_authority = 0.01
 }
 
 heir_adm = {
@@ -2306,7 +2378,7 @@ negative_imperial_authority_member = {
 	
 }
 
-slackening_modifier = { #El manpower se da via un on_action, on_monthly_pulse
+slackening_modifier = { #Hydra, El manpower se da via un on_action, on_monthly_pulse, Este cambio soluciona un par de exploits.
     yearly_army_professionalism = -0.05
     #manpower_recovery_speed = 2
 }
@@ -2336,11 +2408,12 @@ average_subject_liberty_desire = { #100% LD => 100% modifier
 }
 
 reverse_average_subject_liberty_desire = { #100% LD => 0% modifier
-
+	MAY_conditional_loyalty = 0.1
 }
 
 average_global_autonomy = { #100% autonomy => 100% modifier
 	monthly_ottoman_decadence = 0.25
+	monthly_divine_authority = -0.5
 }
 
 reverse_average_global_autonomy = { #100% autonomy => 0% modifier
@@ -2396,4 +2469,9 @@ sailors_percentage = {
 
 reverse_sailors_percentage = {
 
+}
+
+may_dynastic_influence_modifier = {
+	legitimacy = 0.25 
+	land_forcelimit = 3
 }

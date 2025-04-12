@@ -1,0 +1,36 @@
+country_decisions = {
+	
+	hydra_decadence_force_max = {
+		color = { 130  5  137 }
+		potential = {
+			#tag = TUR
+			has_government_mechanic = ottoman_decadence_mechanic
+			#NOT = { has_country_flag = hydra_decadence_force_max_flag }
+			NOT = { has_country_modifier = hydra_tur_force_decadence_modifier }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			AI = NO
+			current_age = age_of_revolutions
+			#has_government_mechanic = ottoman_decadence_mechanic
+		}
+		effect = {
+			#add_government_power = {
+			#mechanic_type = ottoman_decadence_mechanic
+			#power_type = ottoman_decadence
+			#value = 1000
+			#}
+			add_country_modifier = {
+				name = hydra_tur_force_decadence_malus_modifier
+				duration = 18250
+			}
+			add_country_modifier = {
+				name = hydra_tur_force_decadence_modifier
+				duration = 1825
+			}
+			#set_country_flag = hydra_decadence_force_max_flag
+		}
+	}
+}

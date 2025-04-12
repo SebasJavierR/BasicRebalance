@@ -1,0 +1,113 @@
+indipendent_administration = {
+	can_upgrade_trigger = {
+		is_subject_of_type = player_colony
+		colonial_parent = {
+			adm_power_cost = 250
+		}
+	}
+	
+	cost = 2500
+	
+	effect = {
+		colonial_parent = {
+			adm_power_cost = 250
+		}
+	}
+
+	#modifier_overlord = {
+	#	#
+	#}
+
+	modifier_subject = {
+		governing_capacity = 250
+		liberty_desire = 10
+	}
+}
+
+indipendent_economy = {
+	can_upgrade_trigger = {
+		is_subject_of_type = player_colony
+		colonial_parent = {
+			dip_power_cost = 250
+		}
+	}
+	
+	cost = 2500
+	
+	effect = {
+		colonial_parent = {
+			dip_power_cost = 250
+		}
+	}
+
+	#modifier_overlord = {
+	#	#
+	#}
+	
+	modifier_subject = {
+		build_cost = -0.1
+		interest = -1
+		merchants = 1
+		spy_action_cost_modifier = -0.5
+		liberty_desire = 10
+		colony_cost_modifier = -0.25
+	}
+}
+
+indipendent_army = {
+	can_upgrade_trigger = {
+		is_subject_of_type = player_colony
+		colonial_parent = {
+			mil_power_cost = 250
+		}
+	}
+	
+	cost = 2500
+	
+	effect = {
+		colonial_parent = {
+			mil_power_cost = 250
+		}
+	}
+
+	#modifier_overlord = {
+	#	#
+	#}
+	
+	modifier_subject = {
+		discipline = 0.05
+		infantry_power = 0.1
+		liberty_desire = 10
+	}
+}
+
+indipendent_power = {
+	can_upgrade_trigger = {
+		is_subject_of_type = player_colony
+		colonial_parent = {
+			adm_power_cost = 250
+			dip_power_cost = 250
+			mil_power_cost = 250
+		}
+	}
+	
+	cost = 10000
+	
+	effect = {
+		colonial_parent = {
+			adm_power_cost = 250
+			dip_power_cost = 250
+			mil_power_cost = 250
+		}
+	}
+
+	#modifier_overlord = {
+	#	global_tariffs = -0.25
+	#}
+	
+	modifier_subject = {
+		all_power_cost = -0.05
+		min_autonomy = -10
+		liberty_desire = 20
+	}
+}

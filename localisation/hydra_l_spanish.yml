@@ -6,3 +6,108 @@
  base_age_1_balance_modifier:0 "Modificador Base de la Era de los Reforma"
  base_age_2_balance_modifier:0 "Modificador Base de la Era de los Absolutismo"
  base_age_3_balance_modifier:0 "Modificador Base de la Era de los Revoluciones"
+ america_modifier:0 "Capital en el nuevo mundo"
+ hydra_indipendent_power:0 "Poder Independiente"
+ hydra_minor_power:0 "Poder Menor"
+ hydra_subject_nation:0 "Subject Nation"
+ hydra_subject_nation_tributary:0 "Tributary Nation"
+
+ #Bancarrota
+ hydra_notifications.1.t:0 "[bankrupted_player.GetName] esta en §Rbancarrota§!"
+ hydra_notifications.1.d:0 "Todos los jugadores de la partida an recibido esta §Gnotificacion§! sobre la §RBancarrota§!. Talvez deberiamos prepararnos para la guerra."
+ hydra_notifications.1.a:0 "Debemos prepararnos para lo inevitable"
+ hydra_notifications.2.t:0 "[bankrupted_player.GetName] esta en §Rbancarrota§!"
+ hydra_notifications.2.d:0 "Todos los jugadores de la partida an recibido esta §Gnotificacion§! sobre la §RBancarrota§! de [bankrupted_player.GetName]. Debemos movernos rapido y tomar esta oportunidad, para optener tierras y dinero facil, antes que otros rivales la tomen o que la bancarrota expire. Tenemos 5 años para movernos decisivamente."
+ hydra_notifications.2.a:0 "Suena como una oportunidad dorada."
+
+ #Eventos tecnologia africa
+ hydra_technology.1.t:0 "Hydra Ayuda Humanitaria"
+ hydra_technology.1.d:0 "Para hacer mas divertido jugar en africa, agregamos +1 tecnologia a los africanos. De esta forma no empiezan con desventaja comparado con europa."
+ hydra_technology.1.a:0 "Dame mis tecnologias!"
+ hydra_technology.2.t:0 "Hydra Ayuda Humanitaria"
+ hydra_technology.2.d:0 "Para hacer mas divertido jugar en africa, agregamos +1 tecnologia a los africanos. De esta forma no empiezan con desventaja comparado con europa."
+ hydra_technology.2.a:0 "Dame mis tecnologias!"
+ hydra_technology.3.t:0 "Hydra Ayuda Humanitaria"
+ hydra_technology.3.d:0 "Para hacer mas divertido jugar en africa, agregamos +1 tecnologia a los africanos. De esta forma no empiezan con desventaja comparado con europa."
+ hydra_technology.3.a:0 "Dame mis tecnologias!"
+ hydra_technology.4.t:0 "Hydra Ayuda Humanitaria"
+ hydra_technology.4.d:0 "Para hacer mas divertido jugar en africa, agregamos +1 tecnologia a los africanos. De esta forma no empiezan con desventaja comparado con europa."
+ hydra_technology.4.a:0 "Dame mis tecnologias!"
+
+ #Otomanos Desastre
+ tur_had_power_struggle_for_five_years_tt:0 "Tuvo el desastre §YLucha de poder intestina§! durante §Y5 año§!"
+ hydra_decadence_force_max_title:0 "Forzar la decadencia Otomana"
+ hydra_decadence_force_max_desc:0 "Si no eres capaz de lograr 100% de decadencia, puedes utilizar esta desición para evitar morir lentamente"
+ hydra_tur_force_decadence_malus_modifier:0 "Penalizador por forzar decadencia"
+ hydra_tur_force_decadence_modifier:0  "Forzar decadencia"
+
+ #Misiones Francia
+ fra_hydra_alternatively_10_dev_spread_and_tt:0 "\nSe distribuirán §G10§! de desarrollo £adm£ £dip£ £mil£ en provincias de §YBorgoña§!"
+ fra_burg_succession_hydra_title:0 "La sucesión borgoñona (2)"
+ fra_burg_succession_hydra_desc:0 "Los advenedizos duques de Borgoña se consideran un gran poder por derecho propio, pero en realidad solo son meros vasallos. Les debemos recordar este hecho."
+ 
+ #pips (caballeria faltante)
+ heavy_knight:0 "Caballero Pesado Latino"
+ heavy_knight_desc:0 "Caballero Pesado Latino"
+
+ #Alianza rota hace menos de 5 años
+ allie_less_than_5_years_ago_modifier:0 "Estubo aliado con otro jugador hace menos de 5 años"
+ ended_alliance_flag:0  "Estubo aliado con otro jugador hace menos de 5 años"
+
+ ################
+ #Hydra 2.0
+ ################
+ #Nerf Suiza defensividad
+ hydra_defensiveness_reduction_modifier:0 "Defensividad Suiza fuera del pais"
+
+ #Player Colony
+ player_colony:0 "Colonia de Jugador"
+ player_colony_long_desc:0 "Una Colonia de Jugador se asignara automaticamente a una colonia controlada por un jugador humano."
+ player_colony_title:0 "Colonia de Jugador"
+ player_colony_title_plural:0 "Colonias de Jugadores"
+ player_colony_overlord:0 "Señor de Colonia de Jugador"
+ player_colony_subject:0 "Sujeto de Colonia de Jugador"
+ player_colony_is_our:0 "§Y$NAME$§! es nuestra Colonia de Jugador."
+ player_colony_government:0 "Colonia de Jugador"
+ player_colony_government_desc:0 "Colonia de Jugador es un tipo de colonia controlado directamente por un jugador."
+ indipendent_administration:0 "Administracion Independiente"
+ indipendent_economy:0 "Economia Independiente"
+ indipendent_army:0 "Ejercito Independiente"
+ indipendent_power:0 "Poder Independiente"
+
+ #Province modifiers
+ england_continantal_army_hydra_province_modifiers:0 "Ejercito Continental Ingles"
+ france_channel_fleet_hydra_province_modifiers:0 "Flota Francesa del Canal"
+ netherlands_fire_arms_imports_hydra_province_modifiers:0 "Importacion de Armas de Fuego"
+ 
+ #Naval Reduction
+ hydra_naval_reduction_HOL_modifier:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_GBR_modifier:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_POR_modifier:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_MOR_modifier:0 "Priorizar el Ejercito"
+ hydra_naval_modernization_MOR_modifier:0 "Modernizar la Armada"
+
+ hydra_naval_reduction_HOL_title:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_GBR_title:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_POR_title:0 "Priorizar el Ejercito"
+ hydra_naval_reduction_MOR_title:0 "Priorizar el Ejercito"
+ hydra_naval_modernization_MOR_title:0 "Modernizar la Armada"
+
+ hydra_naval_reduction_HOL_desc:0 "Por 50 años le daremos prioridad al ejercito, parte de nuestras ideas nacionales seran nerfeadas, acambio de mejorar nuestro ejercito. Una vez utilizado no podremos revertir la desicion hasta dentro de 50 años."
+ hydra_naval_reduction_GBR_desc:0 "Por 50 años le daremos prioridad al ejercito, parte de nuestras ideas nacionales seran nerfeadas, acambio de mejorar nuestro ejercito. Una vez utilizado no podremos revertir la desicion hasta dentro de 50 años."
+ hydra_naval_reduction_POR_desc:0 "Por 50 años le daremos prioridad al ejercito, parte de nuestras ideas nacionales seran nerfeadas, acambio de mejorar nuestro ejercito. Una vez utilizado no podremos revertir la desicion hasta dentro de 50 años."
+ hydra_naval_reduction_MOR_desc:0 "Por 50 años le daremos prioridad al ejercito, parte de nuestras ideas nacionales seran nerfeadas, acambio de mejorar nuestro ejercito. Una vez utilizado no podremos revertir la desicion hasta dentro de 50 años."
+ hydra_naval_modernization_MOR_desc:0 "Debemos dejar las antiguas maneras de pelear en el mar y adaptarnos a la modernidad."
+
+
+ ################
+ #Hydra 3.0
+ ################
+
+ impossible_to_block_strait_modifier:0 "Estrecho Imposible de bloquear"
+ impossible_to_block_strait_modifier_desc:0 "Este estrecho es imposible de bloquear por fuerzas navales."
+ make_carthage_capital_title:0 "Mover la capital a Cartago"
+ hydra_french_empire_title:0 "Formar el Imperio Frances"
+ hydra_french_empire_title_desc:0 "Formar el Imperio Frances"
+ FRENCH_EMPIRE:0 "Imperio Frances"
+ hydra_fra_empire_modifier:0 "El Imperio Frances Regreso"

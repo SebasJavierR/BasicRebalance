@@ -1,0 +1,69 @@
+country_decisions = {
+	
+	echo_critical_events = {
+		color = { 166  0  0 }
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = echo_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_commandant_decision
+				NOT = { has_country_modifier = echo_commandant_cooldown }
+				NOT = { has_country_modifier = echo_commandant_cooldown_100 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = echo_grand_captain_decision
+				NOT = { has_country_modifier = echo_grand_captain_cooldown }
+				NOT = { has_country_modifier = echo_grand_captain_cooldown_100 }
+			}
+		}
+		effect = {
+		}
+	}
+
+	development_counter = {
+		color = { 166  0  0 }
+		potential = { ai = no }
+		allow = {
+			if = {
+				limit = {
+					has_country_flag = has_development_counter_cflag
+				}
+				custom_trigger_tooltip = {
+					tooltip = development_counter_tt
+				}
+			}
+			hidden_trigger = {
+				if = {
+					limit = {
+						NOT = { has_country_flag = has_development_counter_cflag }
+					}
+					always = yes
+				}
+				else = {
+					always = no
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = has_development_counter_cflag }
+				}
+				custom_tooltip = development_counter_update_tt
+				hidden_effect = { development_counter = { on_startup = yes } }
+			}
+		}
+	}
+}

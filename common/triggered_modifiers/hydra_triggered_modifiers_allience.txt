@@ -1,0 +1,182 @@
+hydra_indipendent_power = {
+	potential = {
+		ROOT = {
+			ai = no	
+		}	
+	}
+	trigger  = {
+		#OR = {
+			#great_power_rank = 5
+			#is_great_power = no
+		#}
+		#any_country = {
+		#	total_development = ROOT
+		#}
+		
+		#NOT = { num_of_allies = 1 }
+		all_ally = { AI = yes }
+		#all_subject_country = { AI = yes }
+		#NOT = { is_hegemon = yes }
+		NOT = { is_colonial_nation = yes }	
+		#any_war_enemy_country = { ai = no }
+		NOT = { has_country_modifier = allie_less_than_5_years_ago_modifier  }
+		#NOT = { is_subject = yes }	# Incluye Colonias
+	}
+	all_power_cost = -0.025
+	manpower_recovery_speed = 0.10
+	discipline = 0.05
+}
+
+hydra_minor_power = {
+	potential = {
+		ROOT = {
+			ai = no	
+		}	
+	}
+	trigger  = {
+		is_great_power = no
+		NOT = { is_subject = yes }
+		any_country = {
+			total_development = ROOT
+		}
+		if = {
+			limit = { current_age = age_of_discovery }
+			custom_trigger_tooltip = {
+				tooltip = less_than_15_provinces_on_same_continent
+				NOT = {
+					num_of_owned_provinces_with = {
+						same_continent = ROOT
+						value = 15
+					}
+				}
+			}
+		}
+		if = {
+			limit = { current_age = age_of_reformation }
+			custom_trigger_tooltip = {
+				tooltip = less_than_25_provinces_on_same_continent
+				NOT = {
+					num_of_owned_provinces_with = {
+						same_continent = ROOT
+						value = 25
+					}
+				}
+			}
+		}
+		if = {
+			limit = { current_age = age_of_absolutism }
+			custom_trigger_tooltip = {
+				tooltip = less_than_35_provinces_on_same_continent
+				NOT = {
+					num_of_owned_provinces_with = {
+						same_continent = ROOT
+						value = 35
+					}
+				}
+			}
+		}
+		if = {
+			limit = { current_age = age_of_revolutions }
+			custom_trigger_tooltip = {
+				tooltip = less_than_50_provinces_on_same_continent
+				NOT = {
+				num_of_owned_provinces_with = {
+					same_continent = ROOT
+					value = 50
+					}
+				}
+			}
+		}
+		
+		NOT = { is_hegemon = yes }
+		NOT = { is_colonial_nation = yes }	
+		#NOT = { is_lacking_institutions = yes }
+	}
+	all_power_cost = -0.025
+	#advisor_cost = -0.05
+	development_cost_modifier = -0.05
+	own_territory_dice_roll_bonus = 1
+}
+
+hydra_subject_nation = {
+	potential = {
+		ROOT = {
+			ai = no	
+		}	
+	}
+	trigger  = {
+		NOT = { is_colonial_nation = yes }	
+		NOT = { is_subject_of_type = tributary_state }	
+		NOT = { is_subject_of_type = daimyo_vassal }	
+		is_subject = yes 
+		#overlord = { AI = NO } #No necesario, si terminaste de vasallo de una IA deja la partida
+	}
+	advisor_cost = 0.5
+	country_admin_power = -3
+	country_diplomatic_power = -3
+	country_military_power = -3
+	morale_damage_received = +0.2
+	morale_damage = -0.2
+}
+
+hydra_subject_nation_tributary = {
+	potential = {
+		ROOT = {
+			ai = no	
+		}	
+	}
+	trigger  = {
+		NOT = { is_colonial_nation = yes }	
+		OR = {
+			is_subject_of_type = tributary_state	
+			is_subject_of_type = daimyo_vassal
+		}	
+		#overlord = { AI = NO }		#No necesario, O sos vasallo de ming (korea y manchuria, en cuyo caso esta bien un nerf, o algo estas haciendo mal.
+	}
+	country_admin_power = -1
+	country_diplomatic_power = -1
+	country_military_power = -1
+	min_autonomy = 5
+}
+
+# hydra_fight_for_survival_tur = {
+# 	potential = {
+# 		AND = {
+# 			tag = TUR
+# 			is_year = 1475
+# 			ROOT = {
+# 				ai = no	
+# 			}
+# 		}	
+# 	}
+# 	trigger  = {
+# 		all_ally = { AI = yes }
+# 		is_at_war = yes
+# 		OR = {
+# 			AND = {
+# 				defensive_war_with = MAM
+# 				OR ={ 
+# 					offensive_war_with = POL
+# 					offensive_war_with = HAB
+# 				}
+# 			}
+# 			AND = {
+# 				offensive_war_with = MAM
+# 				OR ={ 
+# 					defensive_war_with = POL
+# 					defensive_war_with = HAB
+# 				}
+# 			}
+# 			AND = {
+# 				defensive_war_with = MAM
+# 				OR ={ 
+# 					defensive_war_with = POL
+# 					defensive_war_with = HAB
+# 				}
+# 			}
+# 		}
+# 	}
+# 	own_territory_dice_roll_bonus = 1
+# 	defensiveness = 0.25
+# 	max_hostile_attrition = 1
+# }

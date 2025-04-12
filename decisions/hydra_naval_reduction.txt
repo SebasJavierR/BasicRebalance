@@ -1,0 +1,129 @@
+# country_decisions = {
+	
+# 	hydra_naval_reduction_HOL = {
+# 		color = { 130  5  137 }
+# 		potential = {
+# 			OR = {
+# 				tag = HOL
+# 				tag = NED
+# 			}
+# 			NOT = { has_country_modifier = hydra_naval_reduction_HOL_modifier }
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allow = {
+# 			AI = NO
+# 			has_idea = platoon_fire
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = hydra_naval_reduction_HOL_modifier
+# 				duration = 18250
+# 			}
+
+# 		}
+# 	}
+
+# 	hydra_naval_reduction_GBR = {
+# 		color = { 130  5  137 }
+# 		potential = {
+# 			OR = {
+# 				tag = ENG
+# 				tag = GBR
+# 			}
+# 			NOT = { has_country_modifier = hydra_naval_reduction_GBR_modifier }
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allow = {
+# 			AI = NO
+# 			OR = {
+# 				has_idea = british_bill_of_rights
+# 				has_idea = britanna_rules_the_waves
+# 			}
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = hydra_naval_reduction_GBR_modifier
+# 				duration = 18250
+# 			}
+
+# 		}
+# 	}
+
+# 	hydra_naval_reduction_POR = {
+# 		color = { 130  5  137 }
+# 		potential = {
+# 			tag = POR
+# 			NOT = { has_country_modifier = hydra_naval_reduction_POR_modifier }
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allow = {
+# 			AI = NO
+# 			has_idea = por_royal_military_academy
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = hydra_naval_reduction_POR_modifier
+# 				duration = 18250
+# 			}
+
+# 		}
+# 	}
+# 	hydra_naval_reduction_MOR = {
+# 		color = { 130  5  137 }
+# 		potential = {
+# 			tag = MOR
+# 			NOT = { has_country_modifier = hydra_naval_reduction_MOR_modifier }
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allow = {
+# 			AI = NO
+# 			has_idea = mor_curb_power_of_the_tribes
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = hydra_naval_reduction_MOR_modifier
+# 				duration = 18250
+# 			}
+
+# 		}
+# 	}
+
+# 	hydra_naval_modernization_MOR = {
+# 		color = { 130  5  137 }
+# 		potential = {
+# 			OR = {
+# 				tag = MOR
+# 				tag = ADU
+# 			}
+# 			NOT = { has_country_modifier = hydra_naval_modernization_MOR_modifier }
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		allow = {
+# 			AI = NO
+# 			OR = {
+# 				has_idea = mor_fleet
+# 				tag = ADU
+# 			}
+# 			treasury = 2000
+# 		}
+# 		effect = {
+# 			add_treasury = -2000
+# 			add_country_modifier = {
+# 				name = hydra_naval_modernization_MOR_modifier
+# 				duration = -1
+# 			}
+
+# 		}
+# 	}
+
+# }

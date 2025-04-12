@@ -1,0 +1,108 @@
+namespace = hydra_defensiveness
+
+province_event = {		#Para Suiza
+	id = hydra_defensiveness.1
+	title = hydra_defensiveness.1.t
+	desc = hydra_defensiveness.1.desc
+	picture = DIPLOMACY_eventPicture
+	
+	hidden = yes
+
+    trigger = {
+		OR = {
+			AND = { #cuando hay que ponerlo
+				NOT = { has_province_modifier = hydra_defensiveness_reduction_modifier }
+				owner = { NOT = { tag = SWI } }
+				controller = { tag = SWI }
+				controller = { has_idea = alpine_defensiveness }
+				#controlled_by = SWI 
+
+			}
+			AND = {  #Cuando hay que quitarlo
+				has_province_modifier = hydra_defensiveness_reduction_modifier
+				OR = {
+					owner = { tag = SWI }
+					controller = { NOT = { tag = SWI } }
+					controller = { NOT = { has_idea = alpine_defensiveness } }
+					#NOT = { controlled_by = SWI }
+				}
+			}
+		}
+    }
+	
+	immediate = {
+	}
+	option = {
+		name = hydra_defensiveness.1.a
+		trigger = {
+			NOT = {
+				has_province_modifier = hydra_defensiveness_reduction_modifier
+			}
+		}
+		add_province_modifier = { 
+			name = hydra_defensiveness_reduction_modifier
+			duration = -1  
+		}
+	}
+	option = {
+		name = hydra_defensiveness.1.b
+		trigger = {
+			has_province_modifier = hydra_defensiveness_reduction_modifier
+		}
+		remove_province_modifier = hydra_defensiveness_reduction_modifier
+	}
+}
+
+# province_event = {			# Para defensivas
+# 	id = hydra_defensiveness.2
+# 	title = hydra_defensiveness.2.t
+# 	desc = hydra_defensiveness.2.desc
+# 	picture = DIPLOMACY_eventPicture
+	
+# 	#hidden = yes
+
+#     trigger = {
+# 		OR = {
+# 			AND = { #cuando hay que ponerlo
+# 				NOT = { has_province_modifier = hydra_defensiveness_reduction_2_modifier }
+# 				#owner = { NOT = { tag = SWI } }
+# 				#controlled_by = SWI
+# 				controller = { has_idea = defensive_mentality }
+# 				#owner = {NOT = { has_idea = defensive_mentality } }
+# 				#owner = { NOT = { tag = controller } }
+
+# 			}
+# 			AND = {  #Cuando hay que quitarlo
+# 				has_province_modifier = hydra_defensiveness_reduction_2_modifier
+# 				OR = {
+# 					#NOT = { controlled_by = SWI }
+# 					#owner = { tag = SWI }
+# 					controller = { NOT = { has_idea = defensive_mentality } }
+# 					#owner = { tag = controller }
+# 				}
+# 			}
+# 		}
+#     }
+	
+# 	immediate = {
+# 	}
+# 	option = {
+# 		name = hydra_defensiveness.2.a
+# 		trigger = {
+# 			NOT = {
+# 				has_province_modifier = hydra_defensiveness_reduction_2_modifier
+# 			}
+# 		}
+# 		add_province_modifier = { 
+# 			name = hydra_defensiveness_reduction_2_modifier
+# 			duration = -1  
+# 		}
+# 	}
+# 	option = {
+# 		name = hydra_defensiveness.2.b
+# 		trigger = {
+# 			has_province_modifier = hydra_defensiveness_reduction_2_modifier
+# 		}
+# 		remove_province_modifier = hydra_defensiveness_reduction_2_modifier
+# 	}
+# }

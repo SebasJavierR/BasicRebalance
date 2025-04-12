@@ -1,0 +1,21 @@
+﻿l_english:
+#critical events
+ echo_critical_events_title:0 "Available Critical Events"
+ echo_critical_events_desc:0 "Check to see which critical events are still available, a green tick indicates it is available and a red cross indicates it has already been fired"
+ echo_radical_reform_decision:0 "Radical Reforms"
+ echo_military_reform_decision:0 "Military Reforms"
+ echo_commandant_decision:0 "Inspirational Leader not fired previously or in the last 100 years"
+ echo_grand_captain_decision:0 "Grand Captain not fired previously or in the last 100 years"
+ echo_commandant_cooldown:0 "Inspirational Leader Cooldown"
+ echo_commandant_cooldown_tooltip:0 "Perhaps another time..."
+ echo_grand_captain_cooldown:0 "Grand Captain Cooldown"
+ echo_grand_captain_cooldown_tooltip:0 "Perhaps another time..."
+ echo_armyreform_cooldown:0 "Let's not get ahead of ourselves..."
+ echo_armyreform_cooldowntooltip:0 "Perhaps another time..."
+#Development Counter
+ development_counter_title:0 "Total Development Improvements"
+ development_counter_desc:0 "" 
+ development_counter_tt:0 "Development Improvements:\n\n£adm£ Development Gained: §G[Root.adm_dev_counter.GetValue]§! \n£dip£ Development Gained: §G[Root.dip_dev_counter.GetValue]§! \n£mil£ Development Gained: §G[Root.mil_dev_counter.GetValue]§! \n\nTotal Development Gained: §G[Root.total_dev_counter.GetValue]§!"
+ development_counter_update_tt:0 "Add §YDevelopment Improvement Counter§!".
+ echo_grand_captain_cooldown_100:0 "Grand Captain Cooldown"
+ echo_commandant_cooldown_100:0 "Inspirational Leader Cooldown"

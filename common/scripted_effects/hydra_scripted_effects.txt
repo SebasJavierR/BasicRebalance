@@ -1,0 +1,22 @@
+#on_alliance_broken_effect_5_years_cooldown = {
+	#if = {
+	#	limit = {
+	#		#FROM = { AI = NO }
+	#		#AI = NO
+	#	}
+	#	FROM = {
+	#		#clr_country_flag = ended_alliance_flag
+	#		#set_country_flag = ended_alliance_flag
+	#		add_country_modifier = { 
+	#			name = allie_less_than_5_years_ago_modifier
+	# 			duration = 1825
+	# 		}
+	# 	}
+	# 	#clr_country_flag = ended_alliance_flag
+	# 	#set_country_flag = ended_alliance_flag
+	# 	add_country_modifier = { 
+	# 		name = allie_less_than_5_years_ago_modifier
+	# 		duration = 1825
+	# 	}
+	# }
+#}

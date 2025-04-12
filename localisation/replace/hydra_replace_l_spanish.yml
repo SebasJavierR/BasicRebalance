@@ -1,3 +1,6 @@
 ﻿l_spanish:
  SLACK_TEXT:1 "§YRelajar los estándares de reclutamiento§! Cuesta $DROP|R$ Profesionalismo del ejército y dara:\nSoldadesca Mensual: §G+100%§!"
- CANT_SLACKEN_TOO_LOW:0 "Tenemos un profesionalismo militar demasiado bajo como para relajar los estándares de reclutamiento. Necesitamos al menos $NEED|Y$ de Profecionalidad del ejercito. Nos daria:\nSoldadesca mensual: §G+100%§!\nProfesionalismo anual del ejército: §R-5.0%§!"
+ CANT_SLACKEN_TOO_LOW:0 "Tenemos un profesionalismo militar demasiado bajo como para relajar los estándares de reclutamiento. Necesitamos al menos $NEED|Y$ de Profecionalidad del ejercito. Nos daria:\nSoldadesca mensual: §G+200%§!\nProfesionalismo anual del ejército: §R-5.0%§!"
+
+ alpine_defensiveness_desc:0 "Desde finales del siglo XIII y durante el XIV, en nuestras tierras hemos repelido constantemente las incursiones de los Habsburgo (y, a menudo, por extensión, imperiales). Nuestros poderosos soldados han jugado un papel importante en ello, pero las grandes dificultades del terreno de nuestra montañosa patria han hecho que cualquier invasión sea, de todas formas, complicada.\n§R-33% Defensiveness Outside Switherland§!\n"
+

@@ -1,0 +1,27 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+technology_group = western
+religion = catholic
+primary_culture = dutch
+capital = 4383 #Haag
+
+
+1419.9.11 = {
+	monarch = {
+		name = "Philipe III"
+		dynasty = "Bourgogne"
+		birth_date = 1396.7.31
+		adm = 5
+		dip = 5
+		mil = 5
+		leader = { name = "Philipe III"   	type = general	fire = 3	shock = 3	manuever = 3	siege = 1 }
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = calm_personality
+	add_ruler_personality = well_connected_personality
+	add_ruler_personality = well_advised_personality
+	add_heir_personality = bold_fighter_personality
+}
+
+1580.1.1 = { set_legacy_government = administrative_republic } # Constitutionalism and the General Estates
